@@ -15,7 +15,7 @@
 <body>
     <h1>Hello Vue.js</h1>
     <div id="app">
-        <p class="m-1 p-2">{{ title }} -- {{ author }} -- {{ age }}</p>
+        <p class="m-1 p-2">{{ title }} {{ author }} - {{ age }}</p>
 
         <!-- 
             v-on is a vue 'directive'
@@ -33,7 +33,7 @@
                 Shorthand syntax can be used for directives as well
                 @click="..."
                     -->
-        <div @click="title = 'Aboo Mu\'aawiyyah'">Change Title</div>
+        <div @click="changeTitle">Change Title</div>
     </div>
 
 
