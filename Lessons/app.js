@@ -9,8 +9,9 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        changeTitle() {
-            this.title = 'Neo : '
+        changeTitle(title) {
+            this.title = title
+            console.log(title)
         }
     }
 }) 
@@ -18,5 +19,7 @@ const app = Vue.createApp({
 
 // You can add methods to the component by adding a 'methods' property
 // The 'this' keyword references the component thereby allowing access to the data props
+
+// Parameters can also be passed from the view to the component
 
 app.mount('#app') 
