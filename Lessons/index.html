@@ -11,19 +11,15 @@
     <script src="https://unpkg.com/vue@3.0.2"></script>
 </head>
 
-<body>
-    <h1>Hello Vue.js</h1>
+<body class="p-2">
+    <h1>Hello Vue.js &#128512;</h1>
     <div id="app">
-        <p class="m-1 p-2">{{ title }} {{ author }} - {{ age }}</p>
-        <button class="btn btn-danger m-1" v-on:click="age++">
-            Increase Age
-        </button>
-        <button class="btn btn-primary m-1" v-on:click="age--">
-            Decrease Age
-        </button>
-        <button class="btn btn-info" @click="changeTitle('CEO')">
-            Change Title
-        </button>
+        <!-- CONDITIONAL RENDERING -->
+        <!-- Using 'v-if="false"' we can render the div false -->
+
+        <div v-if="false">
+            <p class="m-1 p-2">{{ title }} {{ author }} - {{ age }}</p>
+        </div>
     </div>
 
     <script src="app.js"></script>
