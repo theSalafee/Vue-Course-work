@@ -17,9 +17,17 @@
         <!-- CONDITIONAL RENDERING -->
         <!-- Using 'v-if="false"' we can render the div false -->
 
-        <div v-if="false">
+        <div v-if="showBooks">
             <p class="m-1 p-2">{{ title }} {{ author }} - {{ age }}</p>
         </div>
+
+        <!-- event listener calls toggleShowBooks -->
+        <span @click="toggleShowBooks">
+            <!-- display this btn if showBooks = true -->
+            <span class="btn btn-success" v-if="showBooks">Hide Books</span>
+            <!-- display this btn if showBooks = false -->
+            <span class="btn btn-danger" v-if="!showBooks">Show Books</span>
+        </span>
     </div>
 
     <script src="app.js"></script>
