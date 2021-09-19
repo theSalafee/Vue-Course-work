@@ -17,7 +17,15 @@
     <div id="app">
         <p class="m-1 p-2">{{ title }} -- {{ author }} -- {{ age }}</p>
 
-        <!-- v-on is a vue 'directive' -->
+        <!-- 
+            v-on is a vue 'directive'
+            There are many Vue directives
+            v-on:click="..." sets up an onClick event listener
+            You can put any valid JS between directive quotes like
+                v-on:click="age++"
+        
+        
+        -->
         <button class="btn btn-danger m-1" v-on:click="age++">Increase Age</button>
         <button class="btn btn-primary m-1" v-on:click="age--">Decrease Age</button>
 
