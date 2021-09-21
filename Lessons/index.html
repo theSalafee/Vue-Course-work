@@ -26,6 +26,12 @@
             <!-- display this btn if showBooks = false -->
             <span class="btn btn-danger" v-else>Show Books</span>
         </span>
+
+        <div v-show="showBooks">Currently showing books.</div>
+<!-- 
+        v-if removed the element from the DOM completely.
+        v-show doesn't remove the element from the to DOM but hides the element. 
+-->
     </div>
 
     <script src="app.js"></script>
